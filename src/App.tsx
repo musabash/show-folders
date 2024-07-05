@@ -45,7 +45,6 @@ const App: React.FC = () => {
   return (
     <div className="flex flex-col items-center m-8">
       <div className="m-8 rounded-md bg-gray-100 p-8 font-mono">
-        <div>This is a solution to the task for the 2nd phase of the FE dev role at BrightHR.</div>
         <div>Musa Bas - Frontend Developer - 05/07/2024</div>
         <ul className="list-disc pl-8 text-xs">
           <li>Displays the files/folders</li>
