@@ -1,20 +1,20 @@
-const {CleanWebpackPlugin} = require('clean-webpack-plugin');
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 const path = require('path');
 
 module.exports = {
-  entry:  path.resolve(__dirname, './src/index.tsx'),
-  mode: "development",
+  entry: path.resolve(__dirname, './src/index.tsx'),
+  mode: 'development',
   devServer: {
     port: 3000,
     open: true,
     headers: {
-      "Access-Control-Allow-Origin": "*",
+      'Access-Control-Allow-Origin': '*',
     },
   },
   resolve: {
-    extensions: [".ts", ".tsx", ".js"],
+    extensions: ['.ts', '.tsx', '.js'],
   },
   module: {
     rules: [
@@ -32,9 +32,9 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, './public/index.html'), 
+      template: path.resolve(__dirname, './public/index.html'),
     }),
-    new CleanWebpackPlugin(), 
-    new webpack.HotModuleReplacementPlugin(), 
+    new CleanWebpackPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
   ],
-}
+};
