@@ -22,7 +22,13 @@ const ContentsTable: React.FC<ContentsTableProps> = (props) => {
     <table className="table-auto border-collapse w-full">
       <ContentsTableHeader {...{ handleSort, headers, sortOrder, sortKey }} />
       <tbody>
-        {showNavigatToParent && <td className="px-3 text-left align-baseline"> <button onClick={handleNavigateToParent}>..</button></td>}
+        {showNavigatToParent && (
+          <tr>
+            <td className="px-3 text-left align-baseline">
+              <button onClick={handleNavigateToParent}>..</button>
+            </td>
+          </tr>
+        )}
         {data?.map((item) => {
           return item?.type === 'folder' ? (
             <tr key={item.name}>
