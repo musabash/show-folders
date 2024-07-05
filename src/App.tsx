@@ -20,7 +20,7 @@ const App: React.FC = () => {
 
   const handleNavigateToParent = (): void => {
     setBrowseHistory(prev => {
-      const parent = prev.slice(0, -2)[0] || sampleData;
+      const parent = prev.slice(0, -1)[0] || sampleData;
       setAddress(prev => prev.slice(0, -1));
       setSelectedData(parent);
       return prev.slice(0, -1);
