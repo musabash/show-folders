@@ -1,6 +1,6 @@
 import type { SortableKeys } from "./types";
 
-export const sortOrderMap = { asc: '↓', desc: '↑' };
+export const sortOrderMap = { desc: '↓', asc: '↑' };
 
 export const headers: { title: string, key: SortableKeys | 'type' }[] = [
   { title: 'Name', key: 'name' },

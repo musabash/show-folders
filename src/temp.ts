@@ -48,6 +48,24 @@ export const sampleData: (Item | Folder)[] = [
         size: 123,
       },
       {
+    type: 'folder',
+    name: 'Screenshots',
+    files: [
+      {
+        type: 'png',
+        name: '01202021',
+        added: '2021-01-20',
+        size: 123,
+      },
+      {
+        type: 'png',
+        name: '11132021',
+        added: '2021-11-13',
+        size: 136,
+      },
+    ],
+  },
+      {
         type: 'mov',
         name: 'Welcome to the company!',
         added: '2015-04-24',

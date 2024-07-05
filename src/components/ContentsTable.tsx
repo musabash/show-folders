@@ -38,7 +38,7 @@ const ContentsTable: React.FC<ContentsTableProps> = (props) => {
               <td className="px-3 text-left align-baseline">{item.name}</td>
               <td className="px-3 text-left align-baseline">{item.type}</td>
               <td className="px-3 text-left align-baseline">{item.added}</td>
-              <td className="px-3 text-left align-baseline">{item.size}</td>
+              <td className="px-3 text-left align-baseline">{new Intl.NumberFormat('en').format(item.size)}<span className="pl-0.5 text-xs">KB</span></td>
             </tr>
           );
         })}

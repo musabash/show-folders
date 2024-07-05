@@ -43,17 +43,23 @@ const App: React.FC = () => {
   }, [sortKey, sortOrder, selectedData]);
 
   return (
-    <>
+    <div className="flex flex-col items-center m-8">
       <div className="m-8 rounded-md bg-gray-100 p-8 font-mono">
         <div>This is a solution to the task for the 2nd phase of the FE dev role at BrightHR.</div>
-        <div>Musa Bas - Frontend Developer - 04/07/2024</div>
+        <div>Musa Bas - Frontend Developer - 05/07/2024</div>
+        <ul className="list-disc pl-8 text-xs">
+          <li>Displays the files/folders</li>
+          <li>Allows users to open a folder and view its contents</li>
+          <li>Sortable by name/size/date</li>
+          <li>Filtering functionality not added</li>
+        </ul>
       </div>
 
-      <div className='m-8 p-8 rounded-md w-fit h-fit border min-h-[250px] min-w-[500px] shadow border-gray-100 font-mono"'>
+      <div className='p-8 rounded-md w-fit h-fit border min-h-[250px] min-w-[500px] shadow border-gray-100 font-mono"'>
         <h2 className="px-3">{`/${address?.join('/')}`}</h2>
         <ContentsTable data={sortedData} showNavigatToParent={browseHistory?.length > 0} {...{ sortKey, sortOrder, handleFolderClick, handleSort, handleNavigateToParent }} />
       </div>
-    </>
+    </div>
   );
 };
 

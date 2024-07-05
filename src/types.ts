@@ -1,4 +1,4 @@
-export type ItemType = 'doc' | 'pdf'| 'mov' | 'csv';
+export type ItemType = 'doc' | 'pdf'| 'mov' | 'png' | 'csv';
 
 export interface Item {
   type: ItemType;
