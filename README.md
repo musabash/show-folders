@@ -1,8 +1,9 @@
 # Show Folders Application
+Note: This app has been built without using **create-react-app**
 
 ## Overview
 
-This project is a web application that allows users to access and manage documents uploaded by administrators. Users can navigate through folders, view the contents, sort items by various criteria, and filter files by name. This project is a solution to a task for the second phase of a Frontend Developer role at BrightHR.
+This project is a web application that allows users to access and manage documents uploaded by administrators. Users can navigate through folders, view the contents, sort items by various criteria, and filter files by name.
 
 ## Features
 
@@ -113,6 +114,13 @@ show-folders/
 ### Application Entry Point
 
 - **App.tsx**: Main application component that manages state and renders the `ContentsTable` component.
+
+### Styling
+This project uses Tailwind CSS for styling. Tailwind CSS is a utility-first CSS framework for rapidly building custom user interfaces. The configuration files for Tailwind CSS are:
+
+**tailwind.config.js**: Tailwind CSS configuration file.
+**postcss.config.js**: Configuration file for PostCSS, which processes Tailwind CSS.
+To apply styles using Tailwind CSS, utility classes are used directly in the JSX markup. For example, className="px-3 text-left align-baseline" is used to apply padding, text alignment, and other styles to elements.
 
 ## Future Improvements
 
