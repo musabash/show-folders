@@ -128,6 +128,7 @@ To apply styles using Tailwind CSS, utility classes are used directly in the JSX
 - Enhance the user interface with better styling and responsiveness.
 - Add more comprehensive error handling and validation.
 - Add date formatter
+- Add data-fetching logic to deal with real data (with provided api end-point)
 
 ## Author
 
