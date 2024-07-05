@@ -125,6 +125,7 @@ To apply styles using Tailwind CSS, utility classes are used directly in the JSX
 ## Future Improvements
 
 - Implement the filtering functionality to filter files by their names.
+- Allow users to return to main directory.
 - Enhance the user interface with better styling and responsiveness.
 - Add more comprehensive error handling and validation.
 - Add date formatter
