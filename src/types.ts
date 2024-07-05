@@ -13,4 +13,4 @@ export interface Folder {
   files: (Item | Folder)[];
 };
 
-export type SortableKeys = 'name' | 'added' | 'size' | 'type';
+export type SortableKeys = 'name' | 'added' | 'size';

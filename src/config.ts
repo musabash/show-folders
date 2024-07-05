@@ -1,3 +1,11 @@
+import type { SortableKeys } from "./types";
+
 export const sortOrderMap = { asc: '↓', desc: '↑' };
 
-export const headers = [{ title: 'Name', key: 'name' }, { title: 'Type', key: 'type' }, { title: 'Date added', key: 'added' }, { title: 'Size', key: 'size' }];
+export const headers: { title: string, key: SortableKeys | 'type' }[] = [
+  { title: 'Name', key: 'name' },
+  { title: 'Type', key: 'type'},
+  { title: 'Date added', key: 'added' },
+  { title: 'Size', key: 'size' }
+];
+

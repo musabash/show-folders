@@ -1,7 +1,7 @@
 import React from 'react';
 
-import type { SortableKeys } from '../types';
 import { sortOrderMap } from '../config';
+import { SortableKeys } from 'src/types';
 
 interface ContentsTableHeaderProps {
   sortKey: SortableKeys;
@@ -14,10 +14,10 @@ const ContentsTableHeader: React.FC<ContentsTableHeaderProps> = ({ handleSort, h
   return (
     <thead className="border-separate space-x-0 border-b border-gray-300 border-spacing-4">
       <tr>
-        {headers.map(header => (
-          <th key={header.key} className="relative px-3 align-baseline text-left">
-            {sortKey === header.key && <div className="absolute left-0">{sortOrderMap[sortOrder]}</div>}
-            <button onClick={() => handleSort(header.key as SortableKeys)}>{header.title}</button>
+        {headers.map(({ title, key }) => (
+          <th {...{ key }} className="relative px-3 align-baseline text-left">
+            {sortKey === key && <div className="absolute left-0">{sortOrderMap[sortOrder]}</div>}
+            {key === 'type' ? title : <button onClick={() => handleSort(key as SortableKeys)}>{title}</button>}
           </th>
         ))}
       </tr>
