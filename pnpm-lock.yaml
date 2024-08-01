@@ -8,6 +8,9 @@ dependencies:
   autoprefixer:
     specifier: ^10.4.19
     version: 10.4.19(postcss@8.4.39)
+  display-folders:
+    specifier: 'file:'
+    version: file:(postcss@8.4.39)(typescript@5.5.3)(webpack@5.92.1)
   html-webpack-plugin:
     specifier: ^5.6.0
     version: 5.6.0(webpack@5.92.1)
@@ -4964,3 +4967,26 @@ packages:
     resolution: {integrity: sha512-b4JR1PFR10y1mKjhHY9LaGo6tmrgjit7hxVIeAmyMw3jegXR4dhYqLaQF5zMXZxY7tLpMyJeLjr1C4rLmkVe8g==}
     engines: {node: '>=12.20'}
     dev: true
+
+  file:(postcss@8.4.39)(typescript@5.5.3)(webpack@5.92.1):
+    resolution: {directory: '', type: directory}
+    id: 'file:'
+    name: display-folders
+    dependencies:
+      autoprefixer: 10.4.19(postcss@8.4.39)
+      html-webpack-plugin: 5.6.0(webpack@5.92.1)
+      postcss-cli: 11.0.0(postcss@8.4.39)
+      postcss-loader: 8.1.1(postcss@8.4.39)(typescript@5.5.3)(webpack@5.92.1)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+      style-loader: 4.0.0(webpack@5.92.1)
+      tailwindcss: 3.4.4
+    transitivePeerDependencies:
+      - '@rspack/core'
+      - jiti
+      - postcss
+      - ts-node
+      - tsx
+      - typescript
+      - webpack
+    dev: false
