@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 import ContentsTableHeader from './ContentsTableHeader';
 
 import type { Item, Folder, SortableKeys } from '../types';
