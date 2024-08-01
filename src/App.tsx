@@ -3,6 +3,7 @@ import React, { useMemo, useState } from 'react';
 import type { Item, Folder, SortableKeys } from './types';
 import ContentsTable from './components/ContentsTable';
 import { sampleData } from './temp';
+import SearchComponent from './components/SearchComponent';
 import { getSortedArray } from './utils';
 
 const App: React.FC = () => {
@@ -54,7 +55,8 @@ const App: React.FC = () => {
         </ul>
       </div>
 
-      <div className='p-8 rounded-md w-fit h-fit border min-h-[250px] min-w-[500px] shadow border-gray-100 font-mono"'>
+      <div className="p-8 rounded-md w-fit h-fit border min-h-[250px] min-w-[500px] shadow border-gray-100 font-mono">
+        <SearchComponent />
         <h2 className="px-3">{`/${address?.join('/')}`}</h2>
         <ContentsTable data={sortedData} showNavigatToParent={browseHistory?.length > 0} {...{ sortKey, sortOrder, handleFolderClick, handleSort, handleNavigateToParent }} />
       </div>
